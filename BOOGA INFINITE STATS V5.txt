@@ -1,0 +1,21 @@
+script_key = "izSGMANBHkTwDTXkmrnLAAjPJWYGtcWm"; -- User's key
+script_id = "b088b8d28c972feb30b637564e696628" -- Your script ID. You can find it in the loadstrings. Looks like 0948b02948b02948b0298b410
+
+getgenv().Settings = {
+    PointSlot = "Slot1"; -- Slot that will receive points
+    NamekSlot = "Slot2"; -- Namekian slot that gives points
+    WaitTimeSlotChange = 0.250; -- less = faster (Recommended 0.1 - 0.3) Wait time when talking to slot changer
+    WaitTimeTalk = 0.2; -- (reccommended 0.1 - 0.3 ) Wait time when talking to level NPCs
+    ExtraTime = 0; -- If you need more load time increase the value
+    CharacterSlotChangerDelay = 0.320; -- Delay to talk to character slot changer when it finishes talking to kami (0.3 - 0.5 recommended)
+    KamiChatDelay = 0.32; -- Delay talking to kami (0.270 - 0.450 recommended)
+    CharacterDelayTime = 1.5; -- Time waited after character loads on top of another 0.5 seconds
+    MaxPoints = math.huge; -- math.huge means infinite
+    AutoStats = false; -- Auto upgrades a stat
+    HideName = false; -- Will hide your name in the stats UI
+    Stat = "Phys-Damage"; -- Health-Max,Ki-Max,Phys-Damage,Phys-Resist,Ki-Damage,Ki-Resist,Speed
+    IsPointSlotANamekian = false; -- If point slot isnt a namekian it will be faster to start and more secure, put to true if point slot is a namekian
+}
+
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/893f62584f341cf7385e9a212bf5b291.lua"))() 
