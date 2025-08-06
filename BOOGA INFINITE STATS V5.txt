@@ -1,1 +1,1 @@
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/0101e5c623914a391c60236dcd84310d.lua"))()
+game:GetService("StarterGui"):SetCore("SendNotification", {Title = "BOOGA HUB V6", Text = "Script is in maintenance", Duration = 6})
